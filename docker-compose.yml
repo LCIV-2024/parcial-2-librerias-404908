@@ -1,1 +1,8 @@
-# // TODO: Implementar el docker-compose
+version: "3.9"
+
+services:
+  libreria-app:
+    build: .
+    container_name: libreria-app
+    ports:
+      - "8080:8080"
